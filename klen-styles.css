@@ -1,4 +1,15 @@
 @media (max-width: 575px) {
+          #services .service-card {
+            border: 2px solid #2d5a87!important;
+          }
+        #services .service-card {
+          max-width: 300px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      #about .col-lg-6 .row.g-3 {
+        display: none !important;
+      }
     #about .section-title.mb-4 {
       font-size: 1.8rem !important;
     }
