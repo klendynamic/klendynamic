@@ -26,9 +26,9 @@
   }
   .row.g-4.mt-4 > .col-sm-6 {
     width: 100%;
-    max-width: 90%;
+    max-width: 100%;
     flex: unset;
-    padding: 0.5rem;
+    padding: 0.1rem;
     margin: 0;
   }
   .why-item {
