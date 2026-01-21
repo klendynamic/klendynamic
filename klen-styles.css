@@ -26,9 +26,9 @@
   }
   .row.g-4.mt-4 > .col-sm-6 {
     width: 100%;
-    max-width: 100%;
+    max-width: 90%;
     flex: unset;
-    padding: 0;
+    padding: 0.5rem;
     margin: 0;
   }
   .why-item {
@@ -49,12 +49,12 @@
     width: 100%;
   }
   .why-title {
-    font-size: 1.02rem;
+    font-size: 0.9rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.1rem;
   }
   .why-description {
-    font-size: 0.90rem;
+    font-size: 0.80rem;
     text-align: center;
   }
 }
@@ -348,7 +348,7 @@ section{
    SERVICES SECTION
    ====================== */
 .service-card{
-  background:var(--white);
+  background: linear-gradient(135deg, rgba(197, 193, 192, 0.486) 0%, rgba(230, 231, 231, 0.089) 100%);
   border:1px solid rgba(0,0,0,0.08);
   border-radius:15px;
   padding:2.5rem 1.5rem;
@@ -986,6 +986,14 @@ textarea.form-control{
 }
 
 @media (max-width:575px){
+      #services .service-card {
+        background: none !important;
+      }
+    /* Make contact form submit button full width on mobile */
+    #contact .contact-form-wrapper .btn-orange.btn-lg {
+      width: 100%;
+      display: block;
+    }
   .navbar{padding:.5rem 0}
   
   .hero{padding:2rem 0}
@@ -1122,6 +1130,47 @@ textarea.form-control{
   /* ensure main content doesn't get hidden behind mobile nav */
   main{
     padding-bottom:calc(var(--mobile-nav-height) + 15px) !important;
+  }
+  /* Make package cards smaller and adjust content for mobile */
+  #packages .package-card {
+    max-width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 0.5rem;
+    border-radius: 14px;
+    max-height: 900px;
+  }
+
+  #packages .package-header {
+    padding: 1.2rem 0.7rem;
+  }
+
+  #packages .package-body {
+    padding: 1.2rem 0.7rem;
+  }
+
+  #packages .package-name {
+    font-size: 1.1rem;
+    margin-bottom: 0.1rem;
+  }
+
+  #packages .package-price .currency {
+    font-size: 1rem;
+  }
+  #packages .package-price .amount {
+    font-size: 1.5rem;
+  }
+
+  #packages .package-features {
+    font-size: 0.95rem;
+    padding-left: 1.1em;
+  }
+  #packages .package-features li {
+    margin-bottom: 0.3em;
+  }
+  #packages .btn {
+    font-size: 0.98rem;
+    padding: 0.5rem 0.75rem;
   }
 }
 
