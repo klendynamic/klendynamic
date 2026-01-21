@@ -986,6 +986,32 @@ textarea.form-control{
 }
 
 @media (max-width:575px){
+        /* Why section: fit boxes, center icon, heading, and description on mobile */
+        #about .why-item {
+          width: 100%;
+          max-width: 95%;
+          margin: 0 auto 1rem auto;
+          padding: 1.1rem 0.7rem 1rem 0.7rem;
+          min-height: 110px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          box-sizing: border-box;
+        }
+        #about .why-item .why-icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          margin-bottom: 0.5rem;
+        }
+        #about .why-title,
+        #about .why-description {
+          text-align: center !important;
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+        }
       #services .service-card {
         background: none !important;
       }
